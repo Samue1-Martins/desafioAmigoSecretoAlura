@@ -7,43 +7,46 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap"
             rel="stylesheet" />
+        <link rel="stylesheet" href="./style/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amigo Secreto</title>
     </head>
 
     <body>
-        <header>
-            <div>
+        <header id="header">
+            <div class="logo">
                 <h3>Jogo do amigo secreto</h3>
             </div>
-            <nav>
+            <nav class="navBar">
                 <a href="#">
-                    <p>Teste</p>
+                    <p>GitHub</p>
                 </a>
                 <a href="#">
-                    <p>Teste</p>
+                    <p>Linkedim</p>
                 </a>
                 <a href="#">
-                    <p>Teste</p>
+                    <p>Contate-me</p>
                 </a>
             </nav>
         </header>
         <main>
-            <section>
-                <div>
+            <section id="fisrtSection">
+                <div class="textArea">
                     <h1>Digite o nome dos seus amigos</h1>
                 </div>
-                <div>
+                <div class="inputsArea">
                     <input type="text">
-                    <button>Sortear nomes</button>
+                    <button class="btnInputArea"><img src="./images/arrow.svg" alt></button>
                 </div>
-                <div>
+                <div class="responseArea">
                     <p></p>
+                    <button class="btnDraw">Sortear</button>
                 </div>
             </section>
-            <section>
+            <section id="secondSectionImage">
                 <img src="./images/secretFriend.svg" alt>
             </section>
         </main>
     </body>
+    <script src="javaScript/script.js"></script>
 </html>
