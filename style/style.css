@@ -1,0 +1,130 @@
+:root {
+    --white: #ffffff;
+    --green: #92E3A9;
+    --black: #000000;
+    --gray: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navBar p {
+    color: var(--green);
+    font-weight: 400;
+}
+
+main {
+    width: min(100%, 1100px);
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+}
+
+#fisrtSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+
+#secondSectionImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+
+.inputsArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    border: none;
+    background-color: var(--green);
+    height: 100px;
+    width: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.btnInputArea{
+    border: none;
+    background-color: var(--gray);
+    border-radius: 0px 15px 15px 0px;
+    height: 100px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.btnInputArea img{
+    transform: rotate(90deg);
+}
+
+.textArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.responseArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #92E3A9;
+    border-radius: 15px;
+    height: 3rem;
+    color: var(--white)
+}
+
+.btnDraw {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
