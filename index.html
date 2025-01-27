@@ -18,29 +18,52 @@
                 <h3>Jogo do amigo secreto</h3>
             </div>
             <nav class="navBar">
-                <a href="#">
+                <a href="https://github.com/Samue1-Martins" target="_blank">
                     <p>GitHub</p>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/samuel-martins-560a89266" target="_blank">
                     <p>Linkedim</p>
-                </a>
-                <a href="#">
-                    <p>Contate-me</p>
                 </a>
             </nav>
         </header>
         <main>
             <section id="fisrtSection">
+                <div id="messageAreaDiv">
+                    <h1 id="messageAreaUserName">Digite o seu nome</h1>
+                </div>
+                <div id="divUserName">
+                    <input type="text" class="inputUserName">
+                    <button class="btnUserName" onclick="btnUserName()">
+                        <img src="./images/arrow.svg" alt>
+                    </button>
+                </div>
                 <div class="textArea">
-                    <h1>Digite o nome dos seus amigos</h1>
+                    <h3 id="alertArea"></h3>
                 </div>
-                <div class="inputsArea">
-                    <input type="text">
-                    <button class="btnInputArea"><img src="./images/arrow.svg" alt></button>
+                <div id="inputsArea">
+                    <input type="text" class="inputFriendNames">
+                    <button id="btnInputArea" onclick="addingNamesOnArray()"
+                        disabled>
+                        <img src="./images/arrow.svg" alt>
+                    </button>
                 </div>
-                <div class="responseArea">
-                    <p></p>
-                    <button class="btnDraw">Sortear</button>
+                <div id="divResponse">
+                    <div class="cardResponse">
+                        <div class="cardHeader">
+                            <h1>Amigos</h1>
+                        </div>
+                        <div class="cardMainNamesFriends">
+                            <div id="responseArea"></div>
+                        </div>
+                        <div class="cardFooterBtnDraw">
+                            <button id="btnDraw" onclick="draw()"
+                                disabled>Sortear
+                            </button>
+                            <button id="newDraw" onclick="newDraw()" disabled>
+                                Novo sorteio
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="secondSectionImage">
