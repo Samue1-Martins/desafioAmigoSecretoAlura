@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px){
+    #secondSectionImage{
+        display: none;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #header{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+}
